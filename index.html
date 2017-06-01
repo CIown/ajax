@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="btn">
+<button id = "button">点我</button>
+	</div>
+
+	<script>
+
+ button.onclick = function(){
+ var req = new XMLHttpRequest()
+
+  req.open('GET','/page.html')
+
+  req.onload = function(){
+    console.log(req.responseText)
+  }
+
+  req.send()
+
+ 
+
+}
+
+	</script>
+</body>
+
+
+</html>
